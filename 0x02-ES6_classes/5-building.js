@@ -1,15 +1,15 @@
 export default class Building {
-  constructor(sfqt) {
-    this._sfqt = sfqt;
+  constructor(sqft) {
+    this._sqft = sqft;
     this.evacuationWarningMessage();
   }
 
-  get sfqt() {
-    return this._sfqt;
+  get sqft() {
+    return this._sqft;
   }
 
-  set sfqt(value) {
-    this._sfqt = value;
+  set sqft(value) {
+    this._sqft = value;
   }
 
   evacuationWarningMessage() {
