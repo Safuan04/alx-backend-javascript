@@ -1,4 +1,6 @@
 export default function cleanSet(set, startString) {
+  const setString = [];
+
   if (
     startString.length === 0
     || typeof startString !== 'string'
@@ -7,8 +9,6 @@ export default function cleanSet(set, startString) {
     || set.length === 0) {
     return '';
   }
-
-  const setString = [];
 
   for (const element of set) {
     if (element && element.startsWith(startString)) {
