@@ -22,10 +22,6 @@ const student2: Student = {
 const studentsList: Array<Student> = [student1, student2];
 
 const table = document.createElement("table");
-const header = table.createTHead();
-const headerRow = header.insertRow();
-headerRow.insertCell().textContent = "First Name";
-headerRow.insertCell().textContent = "Location";
 
 const tbody = table.createTBody();
 studentsList.forEach((student) => {
